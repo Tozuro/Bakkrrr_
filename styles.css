@@ -1,1 +1,83 @@
+/* ===== Basic page styling ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* ===== Header ===== */
+.header {
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #1f2a44;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* Simple nav */
+.nav {
+  margin-top: 15px;
+}
+
+.nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+/* Cards (sections) */
+.card {
+  background: #0f172a;
+  border: 1px solid #1f2a44;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* Titles */
+h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 8px;
+}
+
+/* Tag style (skills) */
+.tags span {
+  display: inline-block;
+  border: 1px solid #1f2a44;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 6px 6px 0 0;
+  font-size: 13px;
+}
+
+/* Small text */
+.small {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
+  border-top: 1px solid #1f2a44;
+}
 
