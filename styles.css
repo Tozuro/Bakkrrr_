@@ -1,83 +1,102 @@
-/* ===== Basic page styling ===== */
+/*_Basic page styling_*/
+/* Using this allows me to style the hwole page */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b1220;
-  color: #e5e7eb;
+  background: #0a0a0a; /* dark background wanted to use better color but i will update it in the future obv*/
+  color: #f5f5f5; /* main text color */
 }
 
-/* ===== Header ===== */
+/*_Header_*/
+/* Top section of the page */
 .header {
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 1px solid #1f2a44;
+  padding: 30px 20px; /* space inside header */
+  text-align: center; /* center text */
+  border-bottom: 1px solid #2a2a2a; /* line under header */
 }
 
+/* Subtitle under name */
 .subtitle {
-  color: #9ca3af;
-  margin-top: 8px;
+  color: #b3b3b3; /* lighter text */
+  margin-top: 8px; /* space above */
 }
 
-/* Simple nav */
+/* ===== Navigation ===== */
+/* Navigation container */
 .nav {
   margin-top: 15px;
 }
 
+/* Navigation links */
 .nav a {
-  color: #e5e7eb;
-  text-decoration: none;
-  margin: 0 10px;
+  color: #f5f5f5;
+  text-decoration: none; /* remove underline */
+  margin: 0 10px; /* space between links */
   font-weight: bold;
+  transition: opacity 0.2s ease; /* smooth hover effect */
 }
 
+/* Link hover effect */
 .nav a:hover {
-  color: #38bdf8;
+  opacity: 0.7; /* slightly fade on hover */
 }
 
 /* ===== Layout ===== */
+/* Main content container */
 .container {
-  max-width: 900px;
-  margin: 25px auto;
-  padding: 0 20px;
+  max-width: 900px; /* limit width */
+  margin: 25px auto; /* center container */
+  padding: 0 20px; /* side padding */
 }
 
-/* Cards (sections) */
+/* _Cards(sections)_*/
+/* Each section box */
 .card {
-  background: #0f172a;
-  border: 1px solid #1f2a44;
+  background: #121212;
+  border: 1px solid #2a2a2a;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Titles */
+/* _Card hover animation_ */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*_Section titles_*/
 h2 {
   margin-top: 0;
-  border-bottom: 2px solid #38bdf8;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 8px;
 }
 
-/* Tag style (skills) */
+/*_Skill tags_*/
+/* Style for skills list */
 .tags span {
   display: inline-block;
-  border: 1px solid #1f2a44;
+  border: 1px solid #2a2a2a;
   padding: 6px 10px;
   border-radius: 999px;
   margin: 6px 6px 0 0;
   font-size: 13px;
 }
 
-/* Small text */
+/*_Small text_ */
+/* Used for time */
 .small {
-  color: #9ca3af;
+  color: #b3b3b3;
   font-size: 13px;
 }
 
-/* Footer */
+/* _ Footer_ */
+/* Bottom of the page */
 .footer {
   text-align: center;
   padding: 20px;
-  color: #9ca3af;
-  border-top: 1px solid #1f2a44;
+  color: #b3b3b3;
+  border-top: 1px solid #2a2a2a;
 }
 
