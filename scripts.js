@@ -1,8 +1,8 @@
-// 1) Set the current year in the footer
+// 1) So This Part is actually showing the current year at the bottom of the page
 const yearSpan = document.getElementById("year");
 yearSpan.textContent = new Date().getFullYear();
 
-// 2) Show the current time inside the Goals section
+// 2) And The second Part is showing the current time inside the Goals section
 const timeText = document.getElementById("timeText");
 
 function updateTime() {
@@ -10,9 +10,9 @@ function updateTime() {
   timeText.textContent = "Local time: " + now.toLocaleString();
 }
 
-// run once when page loads
+// Calling the function immediately 
 updateTime();
 
-// update every 30 seconds
+// And this one is here to keep the time updated every 30s which is 30000ms
 setInterval(updateTime, 30000);
 
